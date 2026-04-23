@@ -1520,6 +1520,10 @@ body.loading {
    RESPONSIVE
    ═══════════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
+    .scroll-indicator {
+        display: none;
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
         gap: 48px;
@@ -1642,6 +1646,15 @@ body.loading {
 }
 
 @media (max-width: 480px) {
+    :root {
+        --section-py: 48px;
+        --container-px: 16px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
     .hero-stats {
         flex-direction: column;
         gap: 20px;
@@ -1650,6 +1663,7 @@ body.loading {
 
     .hero-cta {
         flex-direction: column;
+        gap: 12px;
     }
 
     .btn {
@@ -1658,6 +1672,33 @@ body.loading {
     }
 
     .profile-card {
-        width: 260px;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .about-quote h3 {
+        font-size: 2rem;
+    }
+
+    .quote-mark {
+        font-size: 3rem;
+    }
+
+    .detail-card, .skill-category, .project-card, .tl-content, .contact-form-wrap {
+        padding: 20px;
+    }
+
+    .zigzag-timeline {
+        gap: 32px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+    }
+
+    .preloader-logo {
+        font-size: 2.5rem;
     }
 }
