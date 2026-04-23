@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul A — AI Enthusiast | Web Developer | Data Scientist</title>
+    <meta name="description" content="Portfolio of Rahul A — B.Tech AI & Data Science student, AI Enthusiast, Web Developer, and Data Scientist. Explore projects in Machine Learning, Computer Vision, and Full-Stack Development.">
+    <meta name="keywords" content="Rahul A, AI, Machine Learning, Web Developer, Data Science, Portfolio">
+    <meta name="author" content="Rahul A">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.js"></script>
+
+    <!-- Inline SVGs for brand icons not in Lucide -->
+    <style>
+        .icon-github, .icon-linkedin {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-github svg, .icon-linkedin svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+        .pc-links .icon-github svg, .pc-links .icon-linkedin svg,
+        .footer-links .icon-github svg, .footer-links .icon-linkedin svg {
+            width: 18px;
+            height: 18px;
+        }
+        .cc-icon .icon-github svg, .cc-icon .icon-linkedin svg {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+
+    <!-- Devicon for tech logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════ PRELOADER ═══════════ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <span class="pl-bracket">{</span>
+                <span class="pl-text">RA</span>
+                <span class="pl-bracket">}</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-fill" id="preloaderFill"></div>
+            </div>
+            <p class="preloader-tagline">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">{</span> RA <span class="logo-bracket">}</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════ HERO SECTION ═══════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for Internships & Collaborations
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <span class="hero-name">RAHUL A</span>
+                </h1>
+                <div class="hero-roles">
+                    <span class="role-tag"><i data-lucide="brain" class="role-icon"></i> AI Enthusiast</span>
+                    <span class="role-tag"><i data-lucide="code-2" class="role-icon"></i> Web Developer</span>
+                    <span class="role-tag"><i data-lucide="bar-chart-3" class="role-icon"></i> Data Scientist</span>
+                    <span class="role-tag"><i data-lucide="cpu" class="role-icon"></i> ML Engineer</span>
+                </div>
+                <p class="hero-desc">
+                    B.Tech AI & Data Science student passionate about building innovative 
+                    solutions with Machine Learning, Deep Learning, and Full-Stack Development.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-lucide="folder-open" class="btn-icon"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i data-lucide="send" class="btn-icon"></i> Get in Touch
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="19">0</span>
+                        <span class="stat-label">GitHub Repos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">Major Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-label">Hackathon Wins</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <div class="profile-frame">
+                        <div class="frame-accent"></div>
+                        <img src="assets/profile.png" alt="Rahul A — AI & Data Science Student" class="profile-img" id="profileImg">
+                    </div>
+                    <div class="profile-name-card">
+                        <span class="pnc-name">Rahul A</span>
+                        <span class="pnc-title">AI & Data Science</span>
+                    </div>
+                    <div class="floating-badge fb-1">🧠 AI/ML</div>
+                    <div class="floating-badge fb-2">⚛️ React</div>
+                    <div class="floating-badge fb-3">🐍 Python</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ═══════════ ABOUT SECTION ═══════════ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="about-quote">
+                        <span class="quote-mark">"</span>
+                        <h3>HELLO.</h3>
+                    </div>
+                    <p>
+                        I'm <strong>Rahul A</strong>, a B.Tech student in Artificial Intelligence and Data Science 
+                        at <strong>PSG Institute of Technology and Applied Research</strong>. I also pursue a 
+                        BS in Data Science from <strong>IIT Madras</strong> (Online).
+                    </p>
+                    <p>
+                        I have a solid understanding of data structures and algorithms, complemented by 
+                        hands-on experience in competitive programming on LeetCode and HackerRank. My passion 
+                        lies in exploring how data-driven solutions can address real-world challenges.
+                    </p>
+                    <p>
+                        I am eager to deepen my technical skills and contribute to innovative projects that 
+                        align with my interests in AI, data science, and programming.
+                    </p>
+                </div>
+                <div class="about-details">
+                    <div class="detail-card">
+                        <div class="detail-icon"><i data-lucide="graduation-cap"></i></div>
+                        <h4>Education</h4>
+                        <div class="detail-items">
+                            <div class="detail-item">
+                                <span class="di-title">B.Tech — AI & Data Science</span>
+                                <span class="di-sub">PSG iTech, Coimbatore</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="di-title">BS — Data Science (Online)</span>
+                                <span class="di-sub">IIT Madras</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i data-lucide="trophy"></i></div>
+                        <h4>Achievements</h4>
+                        <div class="detail-items">
+                            <div class="detail-item">
+                                <span class="di-title">🥉 3rd Place — AI Federated Intelligence Hackathon</span>
+                                <span class="di-sub">IIT Kanpur & National Health Authority</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="di-title">🏅 Pre-Finalist — Ideathon 2K25</span>
+                                <span class="di-sub">PSG Institute of Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ SKILLS SECTION ═══════════ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="sc-header">
+                        <div class="sc-icon"><i data-lucide="code-2"></i></div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-python-plain"></i> Python</span>
+                        <span class="skill-tag"><i class="devicon-cplusplus-plain"></i> C++</span>
+                        <span class="skill-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="devicon-mysql-plain"></i> SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="sc-header">
+                        <div class="sc-icon"><i data-lucide="layout"></i></div>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-react-original"></i> React.js</span>
+                        <span class="skill-tag"><i class="devicon-html5-plain"></i> HTML5</span>
+                        <span class="skill-tag"><i class="devicon-css3-plain"></i> CSS3</span>
+                        <span class="skill-tag"><i class="devicon-fastapi-plain"></i> FastAPI</span>
+                        <span class="skill-tag"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="sc-header">
+                        <div class="sc-icon"><i data-lucide="brain"></i></div>
+                        <h3>AI / ML</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-tensorflow-original"></i> Machine Learning</span>
+                        <span class="skill-tag"><i class="devicon-pytorch-original"></i> Deep Learning</span>
+                        <span class="skill-tag"><i class="devicon-pandas-original"></i> Data Analytics</span>
+                        <span class="skill-tag"><i class="devicon-openal-plain"></i> Generative AI</span>
+                        <span class="skill-tag"><i class="devicon-python-plain"></i> NLP</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="sc-header">
+                        <div class="sc-icon"><i data-lucide="eye"></i></div>
+                        <h3>Computer Vision</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-opencv-plain"></i> Image Processing</span>
+                        <span class="skill-tag"><i class="devicon-tensorflow-original"></i> Object Detection</span>
+                        <span class="skill-tag"><i class="devicon-python-plain"></i> YOLO</span>
+                        <span class="skill-tag"><i class="devicon-opencv-plain"></i> OpenCV</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="sc-header">
+                        <div class="sc-icon"><i data-lucide="database"></i></div>
+                        <h3>Data & DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+                        <span class="skill-tag"><i class="devicon-hadoop-plain"></i> Hadoop</span>
+                        <span class="skill-tag"><i class="devicon-git-plain"></i> Git</span>
+                        <span class="skill-tag"><i class="devicon-jenkins-plain"></i> Jenkins</span>
+                        <span class="skill-tag"><i class="devicon-azure-plain"></i> Azure DevOps</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="sc-header">
+                        <div class="sc-icon"><i data-lucide="wrench"></i></div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-figma-plain"></i> Figma</span>
+                        <span class="skill-tag"><i class="devicon-streamlit-plain"></i> Streamlit</span>
+                        <span class="skill-tag"><i class="devicon-jupyter-plain"></i> Jupyter</span>
+                        <span class="skill-tag"><i class="devicon-vscode-plain"></i> VS Code</span>
+                        <span class="skill-tag"><i class="devicon-raspberrypi-line"></i> Raspberry Pi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ PROJECTS SECTION ═══════════ -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="cv">Computer Vision</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: Career Recommendation -->
+                <div class="project-card" data-category="ai web">
+                    <div class="pc-header">
+                        <div class="pc-icon"><i data-lucide="compass"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/rahularulbalan-011105/skillset_matcher" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">Career Recommendation System</h3>
+                    <p class="pc-desc">Adaptive multi-model full-stack platform using FastAPI/PostgreSQL backend with Graph-Based Scoring, SVD, and KMeans Clustering. ReactJS frontend with an online learning feedback loop.</p>
+                    <div class="pc-tags">
+                        <span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>ML</span><span>SVD</span>
+                    </div>
+                    <div class="pc-badge">Full Stack + AI</div>
+                </div>
+
+                <!-- Project 2: SNN Attendance -->
+                <div class="project-card" data-category="ai cv">
+                    <div class="pc-header">
+                        <div class="pc-icon"><i data-lucide="scan-face"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/rahularulbalan-011105/Machine_learning_miniproject" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">Smart Face Recognition Attendance</h3>
+                    <p class="pc-desc">Real-time face recognition attendance system using Spiking Neural Networks (SNNs) on Raspberry Pi 4B, optimized for low power consumption and edge device inference.</p>
+                    <div class="pc-tags">
+                        <span>SNN</span><span>Raspberry Pi</span><span>Edge AI</span><span>OpenCV</span>
+                    </div>
+                    <div class="pc-badge">Edge AI</div>
+                </div>
+
+                <!-- Project 3: Recipe Generator -->
+                <div class="project-card" data-category="ai">
+                    <div class="pc-header">
+                        <div class="pc-icon"><i data-lucide="chef-hat"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/rahularulbalan-011105/recipe-generation" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">AI Recipe Generator</h3>
+                    <p class="pc-desc">Generates personalized recipes using a fine-tuned T5 model based on user-input ingredients and calorie requirements. Supports Vegan, Gluten-Free, and Low-Carb dietary filters.</p>
+                    <div class="pc-tags">
+                        <span>T5 Model</span><span>NLP</span><span>Streamlit</span><span>Python</span>
+                    </div>
+                    <div class="pc-badge">Generative AI</div>
+                </div>
+
+                <!-- Project 4: RAG Model -->
+                <div class="project-card" data-category="ai">
+                    <div class="pc-header">
+                        <div class="pc-icon"><i data-lucide="message-square"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/rahularulbalan-011105/rag_model" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">RAG Model — Tiipstr</h3>
+                    <p class="pc-desc">Retrieval-Augmented Generation model built as a product for <strong>Tiipstr</strong>, combining document retrieval with language generation for intelligent Q&A. Currently deployed and in production on <strong>AWS</strong>.</p>
+                    <div class="pc-tags">
+                        <span>RAG</span><span>LLM</span><span>AWS</span><span>Tiipstr</span><span>Python</span>
+                    </div>
+                    <div class="pc-badge">🚀 Production — Tiipstr</div>
+                </div>
+
+                <!-- Project 5: Violence Detection -->
+                <div class="project-card" data-category="cv ai">
+                    <div class="pc-header">
+                        <div class="pc-icon"><i data-lucide="shield-alert"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/rahularulbalan-011105/voilence-prediction-using-yolo" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">Violence Detection — YOLO</h3>
+                    <p class="pc-desc">Real-time violence prediction system using YOLO object detection framework for surveillance and safety monitoring applications.</p>
+                    <div class="pc-tags">
+                        <span>YOLO</span><span>Computer Vision</span><span>Python</span><span>Deep Learning</span>
+                    </div>
+                    <div class="pc-badge">Computer Vision</div>
+                </div>
+
+                <!-- Project 6: NL to SQL -->
+                <div class="project-card" data-category="ai web">
+                    <div class="pc-header">
+                        <div class="pc-icon"><i data-lucide="terminal"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/rahularulbalan-011105/naturallanguage_to_sql" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">Natural Language to SQL — Tiipstr</h3>
+                    <p class="pc-desc">Converts natural language queries into SQL statements using NLP techniques, built as a product for <strong>Tiipstr</strong>. Enables intuitive database interaction without SQL knowledge. Currently deployed and in production on <strong>AWS</strong>.</p>
+                    <div class="pc-tags">
+                        <span>NLP</span><span>SQL</span><span>AWS</span><span>Tiipstr</span><span>Python</span>
+                    </div>
+                    <div class="pc-badge">🚀 Production — Tiipstr</div>
+                </div>
+
+                <!-- Project 7: Nidar -->
+                <div class="project-card" data-category="web">
+                    <div class="pc-header">
+                        <div class="pc-icon"><i data-lucide="plane"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/rahularulbalan-011105/nidar" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">Nidar — Drone Club Platform</h3>
+                    <p class="pc-desc">Full-stack web application for a drone club featuring member portals, report submissions, team directories, and an admin dashboard. Built with React + FastAPI.</p>
+                    <div class="pc-tags">
+                        <span>React</span><span>FastAPI</span><span>Full Stack</span><span>JavaScript</span>
+                    </div>
+                    <div class="pc-badge">Full Stack</div>
+                </div>
+
+                <!-- Project 8: PPE Detection -->
+                <div class="project-card" data-category="cv ai">
+                    <div class="pc-header">
+                        <div class="pc-icon"><i data-lucide="hard-hat"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/rahularulbalan-011105/PPE" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">PPE Detection System</h3>
+                    <p class="pc-desc">Personal Protective Equipment detection prototype using object detection, developed during internship at Mibot Ventures for enhancing workplace safety protocols.</p>
+                    <div class="pc-tags">
+                        <span>Object Detection</span><span>Safety</span><span>Python</span><span>CV</span>
+                    </div>
+                    <div class="pc-badge">Internship Project</div>
+                </div>
+
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/rahularulbalan-011105?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">
+                    <span class="icon-github btn-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span> View All on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ EXPERIENCE SECTION ═══════════ -->
+    <section class="section experience" id="experience">
+        <div class="exp-bg-accent"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Experience & <span class="accent">Education</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="zigzag-timeline">
+
+                <!-- Step 01 — B.Tech -->
+                <div class="zig-step zig-right">
+                    <div class="zig-circle">
+                        <div class="zig-circle-inner">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <span class="zig-number">01</span>
+                    </div>
+                    <div class="zig-card">
+                        <span class="zig-date">2023 — Present</span>
+                        <h3 class="zig-title">B.Tech — AI & Data Science</h3>
+                        <p class="zig-org">PSG Institute of Technology and Applied Research</p>
+                        <p class="zig-desc">Comprehensive study in artificial intelligence, machine learning, data structures, and algorithms. Active in hackathons and project development.</p>
+                    </div>
+                </div>
+
+                <!-- Step 02 — IIT Madras -->
+                <div class="zig-step zig-left">
+                    <div class="zig-circle">
+                        <div class="zig-circle-inner">
+                            <i data-lucide="book-open"></i>
+                        </div>
+                        <span class="zig-number">02</span>
+                    </div>
+                    <div class="zig-card">
+                        <span class="zig-date">Online Degree</span>
+                        <h3 class="zig-title">BS — Data Science</h3>
+                        <p class="zig-org">IIT Madras</p>
+                        <p class="zig-desc">Online degree covering advanced data science, statistics, and computational thinking from India's premier institute.</p>
+                    </div>
+                </div>
+
+                <!-- Step 03 — Mibot Internship -->
+                <div class="zig-step zig-right">
+                    <div class="zig-circle">
+                        <div class="zig-circle-inner">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <span class="zig-number">03</span>
+                    </div>
+                    <div class="zig-card">
+                        <span class="zig-date">Internship</span>
+                        <h3 class="zig-title">Embedded Engineer Intern</h3>
+                        <p class="zig-org">Mibot Ventures, Chennai, Tamil Nadu</p>
+                        <p class="zig-desc">Developed a prototype for PPE detection using Object Detection. Worked with cross-functional teams on safety enhancement software.</p>
+                    </div>
+                </div>
+
+                <!-- Step 04 — Tiipstr -->
+                <div class="zig-step zig-left">
+                    <div class="zig-circle">
+                        <div class="zig-circle-inner">
+                            <i data-lucide="rocket"></i>
+                        </div>
+                        <span class="zig-number">04</span>
+                    </div>
+                    <div class="zig-card">
+                        <span class="zig-date">Product Development</span>
+                        <h3 class="zig-title">AI Product Developer — Tiipstr</h3>
+                        <p class="zig-org">Tiipstr (Production on AWS)</p>
+                        <p class="zig-desc">Built RAG Model and Natural Language to SQL products currently deployed on AWS. Enabling intelligent question-answering and intuitive database interaction.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CONTACT SECTION ═══════════ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05</span>
+                <h2 class="section-title">Let's Work <span class="accent">Together</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'm currently open to internship opportunities, freelance projects, and collaborations. Let's build something amazing together!</p>
+                    <div class="contact-cards">
+                        <a href="mailto:rahularulbalan@gmail.com" class="contact-card" id="contact-email">
+                            <div class="cc-icon"><i data-lucide="mail"></i></div>
+                            <div class="cc-text">
+                                <span class="cc-label">Email</span>
+                                <span class="cc-value">rahularulbalan@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919677304434" class="contact-card" id="contact-phone">
+                            <div class="cc-icon"><i data-lucide="phone"></i></div>
+                            <div class="cc-text">
+                                <span class="cc-label">Phone</span>
+                                <span class="cc-value">+91 9677304434</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rahul-arulbalan-2954b9324/" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+                            <div class="cc-icon"><span class="icon-linkedin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span></div>
+                            <div class="cc-text">
+                                <span class="cc-label">LinkedIn</span>
+                                <span class="cc-value">Rahul Arulbalan</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/rahularulbalan-011105" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+                            <div class="cc-icon"><span class="icon-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span></div>
+                            <div class="cc-text">
+                                <span class="cc-label">GitHub</span>
+                                <span class="cc-value">rahularulbalan-011105</span>
+                            </div>
+                        </a>
+                        <a href="https://leetcode.com/u/Rahul_Arulbalan/" target="_blank" rel="noopener" class="contact-card" id="contact-leetcode">
+                            <div class="cc-icon"><i data-lucide="code"></i></div>
+                            <div class="cc-text">
+                                <span class="cc-label">LeetCode</span>
+                                <span class="cc-value">Rahul_Arulbalan</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="formName">Your Name</label>
+                            <input type="text" id="formName" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formEmail">Your Email</label>
+                            <input type="email" id="formEmail" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage">Message</label>
+                            <textarea id="formMessage" rows="5" placeholder="Let's collaborate on..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <i data-lucide="send" class="btn-icon"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">{</span> RA <span class="logo-bracket">}</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/rahularulbalan-011105" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></span></a>
+                    <a href="https://www.linkedin.com/in/rahul-arulbalan-2954b9324/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span></a>
+                    <a href="https://leetcode.com/u/Rahul_Arulbalan/" target="_blank" rel="noopener" aria-label="LeetCode"><i data-lucide="code"></i></a>
+                    <a href="mailto:rahularulbalan@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Rahul A. Crafted with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
